@@ -5,8 +5,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.smartitventures.mylibrary.CardDetailsActivity;
-import com.smartitventures.mylibrary.IntroActivity;
 public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,8 +13,6 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myintent = new Intent(MainActivity.this, CardDetailsActivity.class);
-                startActivity(myintent);
             }
         });
     }
